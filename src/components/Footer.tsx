@@ -16,10 +16,10 @@ const Footer = () => {
   ];
   
   const support = [
-    { name: 'Shipping & Returns', href: '#' },
-    { name: 'FAQ', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Terms of Service', href: '#' },
+    { name: 'Shipping & Returns', href: '/shipping-returns' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
+    { name: 'Terms of Service', href: '/terms-of-service' },
   ];
 
   return (
@@ -75,12 +75,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {support.map((item) => (
                 <li key={item.name}>
-                  <a 
-                    href={item.href} 
+                  <Link 
+                    to={item.href} 
                     className="text-gray-400 hover:text-halloween-500 transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

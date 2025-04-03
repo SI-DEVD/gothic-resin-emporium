@@ -14,6 +14,10 @@ import Keychains from "./pages/Keychains";
 import Necklaces from "./pages/Necklaces";
 import ValveCaps from "./pages/ValveCaps";
 import Blog from "./pages/Blog";
+import ShippingReturns from "./pages/ShippingReturns";
+import FAQ from "./pages/FAQ";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +37,13 @@ const App = () => (
           <Route path="/necklaces" element={<Necklaces />} />
           <Route path="/valve-caps" element={<ValveCaps />} />
           <Route path="/blog" element={<Blog />} />
+          
+          {/* Customer Support Pages */}
+          <Route path="/shipping-returns" element={<ShippingReturns />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
