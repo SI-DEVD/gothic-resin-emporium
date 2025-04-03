@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -28,17 +27,18 @@ const Navbar = () => {
 
   const categories = [
     { name: 'Home', href: '/' },
-    { name: 'Cabinet Knobs', href: '/cabinet-knobs' },
-    { name: 'Earrings', href: '/earrings' },
-    { name: 'Fan Pulls', href: '/fan-pulls' },
-    { name: 'Keychains', href: '/keychains' },
-    { name: 'Necklaces', href: '/necklaces' },
-    { name: 'Valve Caps', href: '/valve-caps' },
+    { name: 'Cabinet Knobs', href: '/#cabinet-knobs' },
+    { name: 'Earrings', href: '/#earrings' },
+    { name: 'Fan Pulls', href: '/#fan-pulls' },
+    { name: 'Keychains', href: '/#keychains' },
+    { name: 'Necklaces', href: '/#necklaces' },
+    { name: 'Valve Caps', href: '/#valve-caps' },
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/#about' },
     { name: 'Contact', href: '/#contact' },
   ];
 
+  
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -60,7 +60,7 @@ const Navbar = () => {
           
           <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
             {categories.map((category) => (
-              category.href.startsWith('/#') ? (
+              category.href.startsWith('/#') || category.href === '/' ? (
                 <a 
                   key={category.name} 
                   href={category.href} 
@@ -100,7 +100,7 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark-500/95 backdrop-blur-sm">
           {categories.map((category) => (
-            category.href.startsWith('/#') ? (
+            category.href.startsWith('/#') || category.href === '/' ? (
               <a
                 key={category.name}
                 href={category.href}
