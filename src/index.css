@@ -72,18 +72,18 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-gothic font-bold text-center mb-12 text-gothic-200 relative;
+    @apply text-4xl md:text-5xl font-gothic font-bold text-center mb-12 text-gothic-200 relative pb-6;
     text-shadow: 0 0 10px rgba(110, 37, 148, 0.3), 0 0 20px rgba(110, 37, 148, 0.2);
     letter-spacing: 0.05em;
   }
   
   .section-title::before {
-    @apply content-[''] absolute w-16 h-1 bg-halloween-500 bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-2;
+    @apply content-[''] absolute w-16 h-1 bg-halloween-500 bottom-0 left-1/2 transform -translate-x-1/2;
     box-shadow: 0 0 10px rgba(249, 115, 22, 0.6);
   }
   
   .section-title::after {
-    @apply content-[''] absolute w-32 h-[1px] bg-gothic-600/50 bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-4;
+    @apply content-[''] absolute w-32 h-[1px] bg-gothic-600/50 bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-2;
   }
 
   .spooky-shadow {
