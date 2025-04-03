@@ -24,7 +24,7 @@ const testimonials = [
     id: 3,
     name: 'Taylor Knight',
     role: 'Jewelry Enthusiast',
-    content: 'The skull earrings I purchased are now my favorite accessory. They're lightweight, detailed, and I get compliments every time I wear them.',
+    content: "The skull earrings I purchased are now my favorite accessory. They're lightweight, detailed, and I get compliments every time I wear them.",
     rating: 4,
     image: 'https://images.unsplash.com/photo-1504199367641-aba8151af406?w=200&h=200&crop=faces&auto=format&fit=crop'
   },
