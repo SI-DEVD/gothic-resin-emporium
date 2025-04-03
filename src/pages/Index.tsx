@@ -121,7 +121,7 @@ const Index = () => {
             id="cabinet-knobs"
             title="Skull Cabinet Knobs"
             subtitle="Transform your furniture with our haunting skull cabinet knobs and drawer pulls."
-            products={productsData.cabinetKnobs}
+            products={productsData.cabinetKnobs.slice(0, 3)}
             viewAllLink="/cabinet-knobs"
           />
           
@@ -129,7 +129,7 @@ const Index = () => {
             id="earrings"
             title="Skull Earrings"
             subtitle="Make a statement with our unique skull earrings, perfect for any gothic outfit."
-            products={productsData.earrings}
+            products={productsData.earrings.slice(0, 3)}
             viewAllLink="/earrings"
           />
           
@@ -137,7 +137,7 @@ const Index = () => {
             id="fan-pulls"
             title="Skull Fan Pulls"
             subtitle="Add a touch of gothic elegance to your ceiling fans with our detailed skull pulls."
-            products={productsData.fanPulls}
+            products={productsData.fanPulls.slice(0, 3)}
             viewAllLink="/fan-pulls"
           />
           
@@ -145,7 +145,7 @@ const Index = () => {
             id="keychains"
             title="Skull Keychains"
             subtitle="Carry a piece of dark artistry with you with our skull-themed keychains."
-            products={productsData.keychains}
+            products={productsData.keychains.slice(0, 3)}
             viewAllLink="/keychains"
           />
           
@@ -153,7 +153,7 @@ const Index = () => {
             id="necklaces"
             title="Skull Necklaces"
             subtitle="Our skull pendant necklaces combine elegance with a gothic aesthetic."
-            products={productsData.necklaces}
+            products={productsData.necklaces.slice(0, 3)}
             viewAllLink="/necklaces"
           />
           
@@ -161,7 +161,7 @@ const Index = () => {
             id="valve-caps"
             title="Skull Valve Stem Caps"
             subtitle="Give your vehicle a unique touch with our skull-themed tire valve caps."
-            products={productsData.valveCaps}
+            products={productsData.valveCaps.slice(0, 3)}
             viewAllLink="/valve-caps"
           />
         </>
