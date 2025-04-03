@@ -1,17 +1,18 @@
 
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const categories = [
-    { name: 'Cabinet Knobs', href: '#cabinet-knobs' },
-    { name: 'Earrings', href: '#earrings' },
-    { name: 'Fan Pulls', href: '#fan-pulls' },
-    { name: 'Keychains', href: '#keychains' },
-    { name: 'Necklaces', href: '#necklaces' },
-    { name: 'Valve Caps', href: '#valve-caps' },
+    { name: 'Cabinet Knobs', href: '/cabinet-knobs' },
+    { name: 'Earrings', href: '/earrings' },
+    { name: 'Fan Pulls', href: '/fan-pulls' },
+    { name: 'Keychains', href: '/keychains' },
+    { name: 'Necklaces', href: '/necklaces' },
+    { name: 'Valve Caps', href: '/valve-caps' },
   ];
   
   const support = [
@@ -58,12 +59,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {categories.map((category) => (
                 <li key={category.name}>
-                  <a 
-                    href={category.href} 
+                  <Link 
+                    to={category.href} 
                     className="text-gray-400 hover:text-halloween-500 transition-colors"
                   >
                     {category.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
