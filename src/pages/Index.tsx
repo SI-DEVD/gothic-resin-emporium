@@ -9,7 +9,9 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
+import BlogSection from '@/components/BlogSection';
 import { useToast } from '@/components/ui/use-toast';
+import { BlogPost } from '@/components/BlogCard';
 
 interface Product {
   id: number;
@@ -31,31 +33,40 @@ interface ProductsData {
 
 const Index = () => {
   const [productsData, setProductsData] = useState<ProductsData | null>(null);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
   const { toast } = useToast();
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch('/data/products.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch products data');
+        const [productsResponse, blogResponse] = await Promise.all([
+          fetch('/data/products.json'),
+          fetch('/data/blog-posts.json')
+        ]);
+        
+        if (!productsResponse.ok || !blogResponse.ok) {
+          throw new Error('Failed to fetch data');
         }
-        const data = await response.json();
-        setProductsData(data);
+        
+        const productsData = await productsResponse.json();
+        const blogData = await blogResponse.json();
+        
+        setProductsData(productsData);
+        setBlogPosts(blogData.posts.slice(0, 3)); // Get 3 most recent posts
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Error fetching data:', error);
         setLoading(false);
         toast({
           title: "Error",
-          description: "Failed to load products. Please try again later.",
+          description: "Failed to load data. Please try again later.",
           variant: "destructive",
         });
       }
     };
 
-    fetchProducts();
+    fetchData();
 
     // Add spider web SVGs to corners
     const webSVG = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full text-gothic-700">
@@ -111,6 +122,7 @@ const Index = () => {
             title="Skull Cabinet Knobs"
             subtitle="Transform your furniture with our haunting skull cabinet knobs and drawer pulls."
             products={productsData.cabinetKnobs}
+            viewAllLink="/cabinet-knobs"
           />
           
           <ProductCategory
@@ -118,6 +130,7 @@ const Index = () => {
             title="Skull Earrings"
             subtitle="Make a statement with our unique skull earrings, perfect for any gothic outfit."
             products={productsData.earrings}
+            viewAllLink="/earrings"
           />
           
           <ProductCategory
@@ -125,6 +138,7 @@ const Index = () => {
             title="Skull Fan Pulls"
             subtitle="Add a touch of gothic elegance to your ceiling fans with our detailed skull pulls."
             products={productsData.fanPulls}
+            viewAllLink="/fan-pulls"
           />
           
           <ProductCategory
@@ -132,6 +146,7 @@ const Index = () => {
             title="Skull Keychains"
             subtitle="Carry a piece of dark artistry with you with our skull-themed keychains."
             products={productsData.keychains}
+            viewAllLink="/keychains"
           />
           
           <ProductCategory
@@ -139,6 +154,7 @@ const Index = () => {
             title="Skull Necklaces"
             subtitle="Our skull pendant necklaces combine elegance with a gothic aesthetic."
             products={productsData.necklaces}
+            viewAllLink="/necklaces"
           />
           
           <ProductCategory
@@ -146,8 +162,13 @@ const Index = () => {
             title="Skull Valve Stem Caps"
             subtitle="Give your vehicle a unique touch with our skull-themed tire valve caps."
             products={productsData.valveCaps}
+            viewAllLink="/valve-caps"
           />
         </>
+      )}
+      
+      {blogPosts.length > 0 && (
+        <BlogSection posts={blogPosts} />
       )}
       
       <Testimonials />

@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Product {
   id: number;
@@ -18,9 +19,10 @@ interface ProductCategoryProps {
   title: string;
   subtitle: string;
   products: Product[];
+  viewAllLink: string;
 }
 
-const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, products }) => {
+const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, products, viewAllLink }) => {
   return (
     <section id={id} className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -64,9 +66,9 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, 
         </div>
         
         <div className="text-center mt-12">
-          <a href="#shop" className="btn-outline">
+          <Link to={viewAllLink} className="btn-outline">
             View All {title}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

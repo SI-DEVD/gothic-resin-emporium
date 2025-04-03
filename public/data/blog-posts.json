@@ -1,0 +1,65 @@
+
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Art and History of Skull Symbolism",
+      "slug": "art-history-skull-symbolism",
+      "excerpt": "Explore the rich cultural significance of skull imagery throughout human history and its evolution into modern gothic aesthetics.",
+      "coverImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "author": "Eleanor Graves",
+      "date": "April 12, 2025",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl."
+    },
+    {
+      "id": 2,
+      "title": "DIY Skull Decor: Halloween and Beyond",
+      "slug": "diy-skull-decor-halloween-beyond",
+      "excerpt": "Get inspired with our step-by-step guide to creating your own skull-themed decorations that work year-round, not just for Halloween.",
+      "coverImage": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "author": "Morgan Raven",
+      "date": "April 5, 2025",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl."
+    },
+    {
+      "id": 3,
+      "title": "Behind the Designs: Creating Our Resin Skull Collection",
+      "slug": "behind-designs-resin-skull-collection",
+      "excerpt": "Take a peek into our workshop and learn about the meticulous process that goes into crafting each piece in our signature collection.",
+      "coverImage": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "author": "Damien Shade",
+      "date": "March 28, 2025",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl."
+    },
+    {
+      "id": 4,
+      "title": "Styling Tips: Incorporating Gothic Accessories into Everyday Wear",
+      "slug": "styling-tips-gothic-accessories-everyday",
+      "excerpt": "Learn how to seamlessly blend statement skull pieces into your daily wardrobe for a touch of edgy elegance.",
+      "coverImage": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "author": "Lilith Blackwood",
+      "date": "March 21, 2025",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl."
+    },
+    {
+      "id": 5,
+      "title": "Customer Stories: Skulls Inspired in Your Homes",
+      "slug": "customer-stories-skulls-inspired-homes",
+      "excerpt": "We showcase some of our favorite customer photos and testimonials about how our products have enhanced their spaces.",
+      "coverImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "author": "Vincent Mortis",
+      "date": "March 14, 2025",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl."
+    },
+    {
+      "id": 6,
+      "title": "The Psychology of Skull Imagery: Why We're Drawn to Memento Mori",
+      "slug": "psychology-skull-imagery-memento-mori",
+      "excerpt": "Delve into the fascinating psychological aspects behind humanity's enduring fascination with skull symbolism across cultures.",
+      "coverImage": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "author": "Dr. Raven Nightshade",
+      "date": "March 7, 2025",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl. Sed euismod, nisl nec aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl."
+    }
+  ]
+}
