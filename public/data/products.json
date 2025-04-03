@@ -20,6 +20,64 @@
       "price": 24.99,
       "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "isBestSeller": true
+    },
+    {
+      "id": 19,
+      "name": "Brass Skull Cabinet Pull",
+      "price": 21.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 20,
+      "name": "Antique Copper Skull Knob",
+      "price": 19.99,
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxncmF5JTIwYW5kJTIwYmxhY2slMjBsYXB0b3AlMjBjb21wdXRlciUyMG9uJTIwc3VyZmFjZXxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 21,
+      "name": "Mini Skull Dresser Knob Set",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxDb2xvcmZ1bCUyMHNvZnR3YXJlJTIwb3IlMjB3ZWIlMjBjb2RlJTIwb24lMjBhJTIwY29tcHV0ZXIlMjBtb25pdG9yfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 22,
+      "name": "Celtic Skull Door Knob",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMGJyb3duJTIwcm91bmQlMjBmcnVpdCUyMG9uJTIwYnJvd24lMjB3b29kZW4lMjByb3VuZCUyMHBsYXRlfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 23,
+      "name": "Gunmetal Skull Handles",
+      "price": 26.99,
+      "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 24,
+      "name": "Victorian Skull Furniture Pull",
+      "price": 22.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 25,
+      "name": "Ornate Skull Wardrobe Knob",
+      "price": 23.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 26,
+      "name": "Rustic Skull Cabinet Hardware",
+      "price": 17.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 27,
+      "name": "Steampunk Skull Drawer Handle",
+      "price": 28.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
     }
   ],
   "earrings": [
@@ -42,6 +100,65 @@
       "price": 22.99,
       "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
       "isBestSeller": true
+    },
+    {
+      "id": 28,
+      "name": "Silver Skull Hoop Earrings",
+      "price": 19.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 29,
+      "name": "Gothic Skull Drop Earrings",
+      "price": 24.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 30,
+      "name": "Black Pearl Skull Earrings",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxncmF5JTIwYW5kJTIwYmxhY2slMjBsYXB0b3AlMjBjb21wdXRlciUyMG9uJTIwc3VyZmFjZXxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 31,
+      "name": "Sparkling Skull Stud Earrings",
+      "price": 18.99,
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxDb2xvcmZ1bCUyMHNvZnR3YXJlJTIwb3IlMjB3ZWIlMjBjb2RlJTIwb24lMjBhJTIwY29tcHV0ZXIlMjBtb25pdG9yfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 32,
+      "name": "Ruby Eyes Skull Earrings",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMGJyb3duJTIwcm91bmQlMjBmcnVpdCUyMG9uJTIwYnJvd24lMjB3b29kZW4lMjByb3VuZCUyMHBsYXRlfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 33,
+      "name": "Emerald Skull Earrings",
+      "price": 32.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 34,
+      "name": "Victorian Skull Earrings",
+      "price": 27.99,
+      "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 35,
+      "name": "Feather & Skull Earrings",
+      "price": 23.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 36,
+      "name": "Chandelier Skull Earrings",
+      "price": 36.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
     }
   ],
   "fanPulls": [
@@ -63,6 +180,65 @@
       "name": "Glow-in-Dark Skull Fan Pull",
       "price": 24.99,
       "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 37,
+      "name": "Crystal Skull Fan Pull Chain",
+      "price": 22.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 38,
+      "name": "Antique Brass Skull Pull",
+      "price": 18.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 39,
+      "name": "Silver Skull Fan Pull",
+      "price": 21.99,
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxncmF5JTIwYW5kJTIwYmxhY2slMjBsYXB0b3AlMjBjb21wdXRlciUyMG9uJTIwc3VyZmFjZXxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 40,
+      "name": "Victorian Skull Light Pull",
+      "price": 23.99,
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxDb2xvcmZ1bCUyMHNvZnR3YXJlJTIwb3IlMjB3ZWIlMjBjb2RlJTIwb24lMjBhJTIwY29tcHV0ZXIlMjBtb25pdG9yfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 41,
+      "name": "Heavy Metal Skull Fan Chain",
+      "price": 26.99,
+      "image": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMGJyb3duJTIwcm91bmQlMjBmcnVpdCUyMG9uJTIwYnJvd24lMjB3b29kZW4lMjByb3VuZCUyMHBsYXRlfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 42,
+      "name": "Celtic Skull Ceiling Pull",
+      "price": 19.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 43,
+      "name": "Diamond Eye Skull Pull",
+      "price": 32.99,
+      "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 44,
+      "name": "Day of Dead Skull Pull",
+      "price": 27.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 45,
+      "name": "Steampunk Skull Fan Pull",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "isNew": true
     }
   ],
@@ -86,6 +262,65 @@
       "price": 29.99,
       "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080",
       "isNew": true
+    },
+    {
+      "id": 46,
+      "name": "Silver Skull USB Keychain",
+      "price": 24.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 47,
+      "name": "Miniature Skull Keyring",
+      "price": 9.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 48,
+      "name": "Leather & Skull Keychain",
+      "price": 19.99,
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxncmF5JTIwYW5kJTIwYmxhY2slMjBsYXB0b3AlMjBjb21wdXRlciUyMG9uJTIwc3VyZmFjZXxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 49,
+      "name": "Glow-in-Dark Skull Key Fob",
+      "price": 17.99,
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxDb2xvcmZ1bCUyMHNvZnR3YXJlJTIwb3IlMjB3ZWIlMjBjb2RlJTIwb24lMjBhJTIwY29tcHV0ZXIlMjBtb25pdG9yfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 50,
+      "name": "Brass Skull Car Key Chain",
+      "price": 21.99,
+      "image": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMGJyb3duJTIwcm91bmQlMjBmcnVpdCUyMG9uJTIwYnJvd24lMjB3b29kZW4lMjByb3VuZCUyMHBsYXRlfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 51,
+      "name": "Steampunk Skull Key Ring",
+      "price": 23.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 52,
+      "name": "Crystal-eyed Skull Keychain",
+      "price": 26.99,
+      "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 53,
+      "name": "Day of Dead Skull Keychain",
+      "price": 18.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 54,
+      "name": "Gothic Rose Skull Keychain",
+      "price": 20.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
     }
   ],
   "necklaces": [
@@ -108,6 +343,66 @@
       "price": 18.99,
       "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
       "isNew": true
+    },
+    {
+      "id": 55,
+      "name": "Crystal Skull Pendant",
+      "price": 36.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 56,
+      "name": "Vintage Skull Locket",
+      "price": 42.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 57,
+      "name": "Rose Gold Skull Necklace",
+      "price": 39.99,
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxncmF5JTIwYW5kJTIwYmxhY2slMjBsYXB0b3AlMjBjb21wdXRlciUyMG9uJTIwc3VyZmFjZXxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 58,
+      "name": "Black Pearl Skull Pendant",
+      "price": 44.99,
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxDb2xvcmZ1bCUyMHNvZnR3YXJlJTIwb3IlMjB3ZWIlMjBjb2RlJTIwb24lMjBhJTIwY29tcHV0ZXIlMjBtb25pdG9yfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 59,
+      "name": "Ruby Eyes Skull Necklace",
+      "price": 49.99,
+      "image": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMGJyb3duJTIwcm91bmQlMjBmcnVpdCUyMG9uJTIwYnJvd24lMjB3b29kZW4lMjByb3VuZCUyMHBsYXRlfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 60,
+      "name": "Victorian Skull Choker",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 61,
+      "name": "Gothic Cross Skull Necklace",
+      "price": 37.99,
+      "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 62,
+      "name": "Layered Skull Chain Necklace",
+      "price": 46.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 63,
+      "name": "Opal Inlay Skull Pendant",
+      "price": 52.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
     }
   ],
   "valveCaps": [
@@ -130,6 +425,65 @@
       "price": 24.99,
       "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "isBestSeller": true
+    },
+    {
+      "id": 64,
+      "name": "Black Matte Skull Valve Caps",
+      "price": 18.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 65,
+      "name": "Silver Skull Cap Set with Tool",
+      "price": 26.99,
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvYm90JTIwbmVhciUyMGJyb3duJTIwd2FsbHxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 66,
+      "name": "Skull & Crossbones Valve Caps",
+      "price": 22.99,
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxncmF5JTIwYW5kJTIwYmxhY2slMjBsYXB0b3AlMjBjb21wdXRlciUyMG9uJTIwc3VyZmFjZXxlbnwwfHx8fDE3MTY0OTk2MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 67,
+      "name": "Rose Gold Skull Valve Caps",
+      "price": 23.99,
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxDb2xvcmZ1bCUyMHNvZnR3YXJlJTIwb3IlMjB3ZWIlMjBjb2RlJTIwb24lMjBhJTIwY29tcHV0ZXIlMjBtb25pdG9yfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 68,
+      "name": "LED Light-up Skull Caps",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMGJyb3duJTIwcm91bmQlMjBmcnVpdCUyMG9uJTIwYnJvd24lMjB3b29kZW4lMjByb3VuZCUyMHBsYXRlfGVufDB8fHx8MTcxNjQ5OTYwMnww&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 69,
+      "name": "Heavy Duty Skull Valve Caps",
+      "price": 21.99,
+      "image": "https://images.unsplash.com/photo-1473177104440-ffee2f376098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxnb3RoaWMlMjBjYXRoZWRyYWx8ZW58MHx8fHwxNzE2NDk5NjAyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+    },
+    {
+      "id": 70,
+      "name": "Engraved Skull Cap Set",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw3fHxnb3RoaWN8ZW58MHx8fHwxNzE2NDk5NTIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "isBestSeller": true
+    },
+    {
+      "id": 71,
+      "name": "Motorcycle Skull Valve Caps",
+      "price": 25.99,
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "isNew": true
+    },
+    {
+      "id": 72,
+      "name": "Copper Skull Valve Stem Caps",
+      "price": 20.99,
+      "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHwxfHxibHVlJTIwc3RhcnJ5JTIwbmlnaHR8ZW58MHx8fHwxNzE2NDk5Njc1fDA&ixlib=rb-4.0.3&q=80&w=1080"
     }
   ]
 }
