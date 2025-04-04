@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -34,8 +35,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Refunds section without ShieldCheck icon */}
-              <div className="flex items-start">
+              {/* Returns & Refunds section with added vertical space */}
+              <div className="flex items-start mt-8">
                 <div>
                   <p className="font-medium text-gothic-300">Returns & Refunds</p>
                   <p className="text-gray-400">No returns are accepted without a return authorization number. See the <Link to="/shipping-returns" className="text-halloween-500 hover:underline">Shipping & Returns</Link> page for complete details.</p>
