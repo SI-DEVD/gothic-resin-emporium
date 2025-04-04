@@ -68,39 +68,41 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center h-20">
-          <div className="flex-shrink-0 flex items-center -ml-[15%]">
-            <Link to="/" className="flex items-center gap-3">
-              <img
-                className="h-14 w-auto transition-transform hover:scale-105 invert"
-                src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
-                alt="Skulls Inspired"
-              />
-              <span className="text-[1.40rem] font-gothic font-bold hidden sm:block whitespace-nowrap text-gothic-400">Skulls Inspired</span>
-            </Link>
-          </div>
+        <div className="flex justify-center items-center h-20">
+          <div className="flex items-center space-x-16">
+            <div className="flex-shrink-0 flex items-center">
+              <Link to="/" className="flex items-center gap-3">
+                <img
+                  className="h-14 w-auto transition-transform hover:scale-105 invert"
+                  src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
+                  alt="Skulls Inspired"
+                />
+                <span className="text-[1.40rem] font-gothic font-bold hidden sm:block whitespace-nowrap text-gothic-400">Skulls Inspired</span>
+              </Link>
+            </div>
           
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-5 ml-16">
-            {categories.map((category) => (
-              category.href.startsWith('/#') ? (
-                <a 
-                  key={category.name} 
-                  href={category.href} 
-                  className="nav-link"
-                >
-                  {formatCategoryName(category.name)}
-                </a>
-              ) : (
-                <Link 
-                  key={category.name} 
-                  to={category.href} 
-                  className="nav-link"
-                >
-                  {formatCategoryName(category.name)}
-                </Link>
-              )
-            ))}
-            <Link to="/shop" className="btn-primary ml-4 whitespace-nowrap">Shop All</Link>
+            <div className="hidden md:flex items-center space-x-4 lg:space-x-5">
+              {categories.map((category) => (
+                category.href.startsWith('/#') ? (
+                  <a 
+                    key={category.name} 
+                    href={category.href} 
+                    className="nav-link"
+                  >
+                    {formatCategoryName(category.name)}
+                  </a>
+                ) : (
+                  <Link 
+                    key={category.name} 
+                    to={category.href} 
+                    className="nav-link"
+                  >
+                    {formatCategoryName(category.name)}
+                  </Link>
+                )
+              ))}
+              <Link to="/shop" className="btn-primary whitespace-nowrap">Shop All</Link>
+            </div>
           </div>
           
           <div className="md:hidden flex items-center">
