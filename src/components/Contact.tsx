@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -17,6 +16,7 @@ const Contact = () => {
             <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-300">Contact Information</h3>
             
             <div className="space-y-6">
+              {/* Existing email section */}
               <div className="flex items-start">
                 <Mail className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
@@ -25,6 +25,7 @@ const Contact = () => {
                 </div>
               </div>
               
+              {/* Existing address section */}
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
@@ -33,6 +34,7 @@ const Contact = () => {
                 </div>
               </div>
 
+              {/* Refunds section with ShieldCheck icon */}
               <div className="flex items-start">
                 <ShieldCheck className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
