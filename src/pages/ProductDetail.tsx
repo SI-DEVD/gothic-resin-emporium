@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Star, StarHalf, ShoppingCart, Heart } from 'lucide-react';
+import { Star, StarHalf, ShoppingCart, Heart, Facebook, Twitter, Share2, Pin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -138,6 +138,35 @@ const ProductDetail = () => {
     }
     
     return stars;
+  };
+  
+  const shareOnSocialMedia = (platform: string) => {
+    const currentUrl = window.location.href;
+    const productName = product?.name || '';
+    let shareUrl = '';
+
+    switch (platform) {
+      case 'facebook':
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+        break;
+      case 'twitter':
+        shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out this ${productName}!`)}&url=${encodeURIComponent(currentUrl)}`;
+        break;
+      case 'pinterest':
+        shareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(currentUrl)}&media=${encodeURIComponent(product?.image || '')}&description=${encodeURIComponent(productName)}`;
+        break;
+      case 'tiktok':
+        // TikTok doesn't have a direct share URL like others, but we can redirect to TikTok
+        // Most commonly people would copy the link and paste in TikTok manually
+        toast({
+          title: "Share on TikTok",
+          description: "Copy this link and paste it in your TikTok post",
+        });
+        navigator.clipboard.writeText(currentUrl);
+        return;
+    }
+
+    window.open(shareUrl, '_blank', 'width=600,height=400');
   };
   
   if (loading) {
@@ -287,6 +316,45 @@ const ProductDetail = () => {
               <Button variant="outline" size="icon" className="bg-dark-300/80 border-gothic-400 text-gothic-200 hover:text-white">
                 <Heart className="h-5 w-5" />
               </Button>
+            </div>
+
+            {/* Social Media Sharing */}
+            <div className="mb-8">
+              <p className="text-gothic-300 mb-2">Share this product:</p>
+              <div className="flex gap-2">
+                <Button 
+                  onClick={() => shareOnSocialMedia('facebook')} 
+                  variant="outline" 
+                  size="icon" 
+                  className="bg-dark-300/80 border-gothic-400 text-blue-500 hover:text-blue-400"
+                >
+                  <Facebook className="h-5 w-5" />
+                </Button>
+                <Button 
+                  onClick={() => shareOnSocialMedia('twitter')} 
+                  variant="outline" 
+                  size="icon" 
+                  className="bg-dark-300/80 border-gothic-400 text-sky-500 hover:text-sky-400"
+                >
+                  <Twitter className="h-5 w-5" />
+                </Button>
+                <Button 
+                  onClick={() => shareOnSocialMedia('pinterest')} 
+                  variant="outline" 
+                  size="icon" 
+                  className="bg-dark-300/80 border-gothic-400 text-red-500 hover:text-red-400"
+                >
+                  <Pin className="h-5 w-5" />
+                </Button>
+                <Button 
+                  onClick={() => shareOnSocialMedia('tiktok')} 
+                  variant="outline" 
+                  size="icon" 
+                  className="bg-dark-300/80 border-gothic-400 text-gothic-200 hover:text-white"
+                >
+                  <Share2 className="h-5 w-5" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
