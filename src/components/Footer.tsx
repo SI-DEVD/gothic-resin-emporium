@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Twitter, Pinterest } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,21 +37,39 @@ const Footer = () => {
               <span className="text-[1.40rem] font-gothic font-bold text-gothic-400">Skulls Inspired</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Handcrafted skull-themed resin jewelry and accessories for those who appreciate darkly elegant design.
+              Handcrafted skull-themed resin jewelry and accessories for those who appreciate dark and elegant design.
             </p>
             <div className="flex space-x-4">
-              {['facebook', 'instagram', 'twitter', 'pinterest'].map((social) => (
-                <a 
-                  key={social}
-                  href={`#${social}`} 
-                  className="text-gray-400 hover:text-halloween-500 transition-colors"
-                >
-                  <span className="sr-only">{social}</span>
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              ))}
+              <a 
+                href="https://www.facebook.com/SkullsInspired" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <Facebook className="w-6 h-6" />
+                <span className="sr-only">Facebook</span>
+              </a>
+              <a 
+                href="#instagram" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <Instagram className="w-6 h-6" />
+                <span className="sr-only">Instagram</span>
+              </a>
+              <a 
+                href="#twitter" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <Twitter className="w-6 h-6" />
+                <span className="sr-only">Twitter</span>
+              </a>
+              <a 
+                href="#pinterest" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <Pinterest className="w-6 h-6" />
+                <span className="sr-only">Pinterest</span>
+              </a>
             </div>
           </div>
           
