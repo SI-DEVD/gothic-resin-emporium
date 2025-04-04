@@ -71,16 +71,16 @@ const Navbar = () => {
         <div className="flex justify-center items-center h-20">
           <div className="flex items-center space-x-16">
             <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="flex items-center gap-3">
+              <Link to="/" className="flex items-center gap-3 bg-transparent">
                 <img
-                  className="h-14 w-auto transition-transform hover:scale-105 invert"
+                  className="h-14 w-auto transition-transform hover:scale-105 invert bg-transparent"
                   src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
                   alt="Skulls Inspired"
                 />
                 <span className="text-[1.40rem] font-gothic font-bold hidden sm:block whitespace-nowrap text-gothic-400">Skulls Inspired</span>
               </Link>
             </div>
-          
+            
             <div className="hidden md:flex items-center space-x-4 lg:space-x-5">
               {categories.map((category) => (
                 category.href.startsWith('/#') ? (
