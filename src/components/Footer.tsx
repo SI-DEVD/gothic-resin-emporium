@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, icons } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,6 +22,10 @@ const Footer = () => {
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms of Service', href: '/terms-of-service' },
   ];
+
+  // Create icon components for those not directly exported
+  const PinterestIcon = icons.CirclePin;
+  const TikTokIcon = icons.CircleVideo;
 
   return (
     <footer className="bg-dark-500 text-gray-300 py-16 relative">
@@ -49,6 +54,13 @@ const Footer = () => {
                 <span className="sr-only">Facebook</span>
               </a>
               <a 
+                href="#instagram" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <Instagram className="w-6 h-6" />
+                <span className="sr-only">Instagram</span>
+              </a>
+              <a 
                 href="#twitter" 
                 className="text-gray-400 hover:text-halloween-500 transition-colors"
               >
@@ -56,11 +68,25 @@ const Footer = () => {
                 <span className="sr-only">Twitter</span>
               </a>
               <a 
-                href="#instagram" 
+                href="#youtube" 
                 className="text-gray-400 hover:text-halloween-500 transition-colors"
               >
-                <Instagram className="w-6 h-6" />
-                <span className="sr-only">Instagram</span>
+                <Youtube className="w-6 h-6" />
+                <span className="sr-only">YouTube</span>
+              </a>
+              <a 
+                href="#pinterest" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <PinterestIcon className="w-6 h-6" />
+                <span className="sr-only">Pinterest</span>
+              </a>
+              <a 
+                href="#tiktok" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <TikTokIcon className="w-6 h-6" />
+                <span className="sr-only">TikTok</span>
               </a>
             </div>
           </div>
