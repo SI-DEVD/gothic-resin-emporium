@@ -27,12 +27,12 @@ const Navbar = () => {
   }, []);
 
   const categories = [
-    { name: 'Cabinet Knobs', href: '/#cabinet-knobs' },
-    { name: 'Earrings', href: '/#earrings' },
-    { name: 'Fan Pulls', href: '/#fan-pulls' },
-    { name: 'Keychains', href: '/#keychains' },
-    { name: 'Necklaces', href: '/#necklaces' },
-    { name: 'Valve Caps', href: '/#valve-caps' },
+    { name: 'Cabinet Knobs', href: '/cabinet-knobs' },
+    { name: 'Earrings', href: '/earrings' },
+    { name: 'Fan Pulls', href: '/fan-pulls' },
+    { name: 'Keychains', href: '/keychains' },
+    { name: 'Necklaces', href: '/necklaces' },
+    { name: 'Valve Caps', href: '/valve-caps' },
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/#about' },
     { name: 'Contact', href: '/#contact' },
@@ -74,7 +74,7 @@ const Navbar = () => {
           
           <div className="hidden md:flex items-center space-x-4 lg:space-x-5">
             {categories.map((category) => (
-              category.href.startsWith('/#') || category.href === '/' ? (
+              category.href.startsWith('/#') ? (
                 <a 
                   key={category.name} 
                   href={category.href} 
@@ -114,7 +114,7 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark-500/95 backdrop-blur-sm">
           {categories.map((category) => (
-            category.href.startsWith('/#') || category.href === '/' ? (
+            category.href.startsWith('/#') ? (
               <a
                 key={category.name}
                 href={category.href}
