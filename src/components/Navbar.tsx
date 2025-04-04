@@ -107,7 +107,7 @@ const Navbar = () => {
           
           <div className="md:hidden flex items-center">
             {/* Mobile Company Name */}
-            <span className="text-[1.15rem] font-gothic font-bold text-gothic-400 mr-6 whitespace-nowrap">Skulls Inspired</span>
+            <span className="text-[1.15rem] font-gothic font-bold text-gothic-400 ml-5 mr-6 whitespace-nowrap">Skulls Inspired</span>
             
             <button
               onClick={toggleMenu}
