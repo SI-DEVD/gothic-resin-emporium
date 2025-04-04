@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Skull } from 'lucide-react';
@@ -76,7 +75,7 @@ const Hero = () => {
                     className="w-full h-60 object-cover object-center"
                   />
                   <div className="p-6">
-                    <h3 className="text-2xl font-gothic font-bold mb-2 text-gothic-200">Exquisite Craftsmanship</h3>
+                    <h3 className="text-2xl font-gothic font-bold mb-2 text-gothic-300">Exquisite Craftsmanship</h3>
                     <p className="text-gray-300">Each piece is meticulously crafted by hand, ensuring unique details and quality.</p>
                   </div>
                 </div>
