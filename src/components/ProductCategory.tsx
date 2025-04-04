@@ -23,6 +23,11 @@ interface ProductCategoryProps {
 }
 
 const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, products, viewAllLink }) => {
+  // Extract category slug from title
+  const getCategorySlug = () => {
+    return title.toLowerCase().replace(/\s+/g, '-');
+  };
+
   return (
     <section id={id} className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -43,22 +48,26 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, 
                 {product.isBestSeller && (
                   <Badge className="product-badge bg-gothic-600">Best Seller</Badge>
                 )}
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="w-full h-64 object-cover object-center transition-all duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
-                  <div className="flex gap-2 w-full">
-                    <Button className="w-full btn-primary">Add to Cart</Button>
-                    <Button variant="outline" size="icon" className="bg-dark-300/80 border-gothic-400 text-gothic-200 hover:text-white">
-                      <Heart className="h-5 w-5" />
-                    </Button>
+                <Link to={`/product/${getCategorySlug()}/${product.id}`}>
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-64 object-cover object-center transition-all duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                    <div className="flex gap-2 w-full">
+                      <Button className="w-full btn-primary">View Details</Button>
+                      <Button variant="outline" size="icon" className="bg-dark-300/80 border-gothic-400 text-gothic-200 hover:text-white">
+                        <Heart className="h-5 w-5" />
+                      </Button>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-gothic font-bold mb-2 text-gothic-200">{product.name}</h3>
+                <Link to={`/product/${getCategorySlug()}/${product.id}`}>
+                  <h3 className="text-xl font-gothic font-bold mb-2 text-gothic-200 hover:text-halloween-500 transition-colors">{product.name}</h3>
+                </Link>
                 <p className="text-halloween-500 font-bold">${product.price.toFixed(2)}</p>
               </div>
             </div>

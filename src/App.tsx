@@ -19,6 +19,7 @@ import ShippingReturns from "./pages/ShippingReturns";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import ProductDetail from "./pages/ProductDetail";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +29,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop /> {/* Add this line */}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/shop" element={<Shop />} />
@@ -39,6 +40,9 @@ const App = () => (
           <Route path="/necklaces" element={<Necklaces />} />
           <Route path="/valve-caps" element={<ValveCaps />} />
           <Route path="/blog" element={<Blog />} />
+          
+          {/* Product Detail Page */}
+          <Route path="/product/:category/:id" element={<ProductDetail />} />
           
           {/* Customer Support Pages */}
           <Route path="/shipping-returns" element={<ShippingReturns />} />

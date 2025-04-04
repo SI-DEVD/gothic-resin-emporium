@@ -6,6 +6,7 @@ import { Heart, Star, StarHalf } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
+import { Link } from 'react-router-dom';
 import { 
   Pagination, 
   PaginationContent, 
@@ -65,6 +66,11 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ title, products }) => {
     });
   };
 
+  // Extract category from title (simplify it for URL)
+  const getCategorySlug = () => {
+    return title.toLowerCase().replace(/\s+/g, '-').replace(/all\s+/i, '');
+  };
+
   // Generate array of page numbers to display
   const getPageNumbers = () => {
     const pageNumbers = [];
@@ -111,22 +117,26 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ title, products }) => {
                   {product.isBestSeller && (
                     <Badge className="product-badge bg-gothic-600">Best Seller</Badge>
                   )}
-                  <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-64 object-cover object-center transition-all duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
-                    <div className="flex gap-2 w-full">
-                      <Button className="w-full btn-primary">Add to Cart</Button>
-                      <Button variant="outline" size="icon" className="bg-dark-300/80 border-gothic-400 text-gothic-200 hover:text-white">
-                        <Heart className="h-5 w-5" />
-                      </Button>
+                  <Link to={`/product/${getCategorySlug()}/${product.id}`}>
+                    <img 
+                      src={product.image} 
+                      alt={product.name} 
+                      className="w-full h-64 object-cover object-center transition-all duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                      <div className="flex gap-2 w-full">
+                        <Button className="w-full btn-primary">View Details</Button>
+                        <Button variant="outline" size="icon" className="bg-dark-300/80 border-gothic-400 text-gothic-200 hover:text-white">
+                          <Heart className="h-5 w-5" />
+                        </Button>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-gothic font-bold mb-2 text-gothic-200">{product.name}</h3>
+                  <Link to={`/product/${getCategorySlug()}/${product.id}`}>
+                    <h3 className="text-xl font-gothic font-bold mb-2 text-gothic-200 hover:text-halloween-500 transition-colors">{product.name}</h3>
+                  </Link>
                   <div className="flex items-center mb-2">
                     <div className="flex mr-2">
                       {renderRatingStars(product.rating)}
