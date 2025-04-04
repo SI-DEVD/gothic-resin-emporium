@@ -58,10 +58,13 @@ const Hero = () => {
               <ShieldCheck className="w-5 h-5 text-halloween-500" />
               <p className="text-sm font-medium text-halloween-500">Shipping Magic!</p>
             </div>
-            <p className="text-gray-300 flex items-center gap-2">
+            <div className="text-gray-300 flex items-center gap-2">
               <CreditCard className="w-5 h-5 text-gothic-300" />
-              FREE Shipping Site Wide! All major credit cards accepted via secure PayPal checkout.
-            </p>
+              <div>
+                <p>FREE shipping site wide!</p>
+                <p>All major credit cards accepted via secure PayPal checkout!</p>
+              </div>
+            </div>
           </div>
         </div>
         
