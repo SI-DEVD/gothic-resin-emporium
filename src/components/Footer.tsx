@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
@@ -62,13 +61,6 @@ const Footer = () => {
               >
                 <Twitter className="w-6 h-6" />
                 <span className="sr-only">Twitter</span>
-              </a>
-              <a 
-                href="#pinterest" 
-                className="text-gray-400 hover:text-halloween-500 transition-colors"
-              >
-                <Pinterest className="w-6 h-6" />
-                <span className="sr-only">Pinterest</span>
               </a>
             </div>
           </div>
