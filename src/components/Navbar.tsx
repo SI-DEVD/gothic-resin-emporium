@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -46,7 +47,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-4 mr-12">
+            <Link to="/" className="flex-shrink-0 flex items-center gap-3 mr-12">
               <img
                 className="h-14 w-auto transition-transform hover:scale-105 invert"
                 src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
