@@ -32,7 +32,7 @@ const About = () => {
             </div>
             
             <div className="md:w-1/2 animate-fade-in">
-              <h3 className="text-2xl font-gothic font-bold mb-4 text-gothic-200">Handcrafted with Passion</h3>
+              <h3 className="text-2xl font-gothic font-bold mb-4 text-gothic-300">Handcrafted with Passion</h3>
               <p className="text-gray-300 mb-4">
                 Skulls Inspired was born from our love of gothic aesthetics and intricate craftsmanship. Our journey began in a small workshop where each piece was carefully created by hand.
               </p>

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -64,7 +65,7 @@
   }
 
   .btn-outline {
-    @apply px-6 py-3 border-2 border-gothic-400 text-gothic-200 hover:bg-gothic-800/50 font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-gothic-600/30 focus:ring-2 focus:ring-gothic-400 focus:outline-none transform hover:-translate-y-1;
+    @apply px-6 py-3 border-2 border-gothic-400 text-gothic-300 hover:bg-gothic-800/50 font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-gothic-600/30 focus:ring-2 focus:ring-gothic-400 focus:outline-none transform hover:-translate-y-1;
   }
 
   .card {
@@ -72,7 +73,7 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-gothic font-bold text-center mb-12 text-gothic-200 relative pb-6;
+    @apply text-4xl md:text-5xl font-gothic font-bold text-center mb-12 text-gothic-300 relative pb-6;
     text-shadow: 0 0 10px rgba(110, 37, 148, 0.3), 0 0 20px rgba(110, 37, 148, 0.2);
     letter-spacing: 0.05em;
   }

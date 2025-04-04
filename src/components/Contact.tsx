@@ -13,13 +13,13 @@ const Contact = () => {
         
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-dark-400 p-8 rounded-lg border border-gothic-800 spooky-shadow">
-            <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-200">Contact Information</h3>
+            <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-300">Contact Information</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <Mail className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
-                  <p className="font-medium text-gothic-200">Email</p>
+                  <p className="font-medium text-gothic-300">Email</p>
                   <p className="text-gray-400">info@skullsinspired.com</p>
                 </div>
               </div>
@@ -27,7 +27,7 @@ const Contact = () => {
               <div className="flex items-start">
                 <Phone className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
-                  <p className="font-medium text-gothic-200">Phone</p>
+                  <p className="font-medium text-gothic-300">Phone</p>
                   <p className="text-gray-400">+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -35,14 +35,14 @@ const Contact = () => {
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
-                  <p className="font-medium text-gothic-200">Address</p>
+                  <p className="font-medium text-gothic-300">Address</p>
                   <p className="text-gray-400">123 Haunted Lane, Gothic City, GC 98765</p>
                 </div>
               </div>
             </div>
             
             <div className="mt-10">
-              <h4 className="text-lg font-gothic font-bold mb-4 text-gothic-200">Follow Us</h4>
+              <h4 className="text-lg font-gothic font-bold mb-4 text-gothic-300">Follow Us</h4>
               <div className="flex space-x-4">
                 {['facebook', 'instagram', 'twitter', 'pinterest'].map((social) => (
                   <a 
@@ -61,11 +61,11 @@ const Contact = () => {
           </div>
           
           <div className="bg-dark-400 p-8 rounded-lg border border-gothic-800 spooky-shadow">
-            <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-200">Send us a Message</h3>
+            <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-300">Send us a Message</h3>
             
             <form className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gothic-200 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gothic-300 mb-1">
                   Your Name
                 </label>
                 <Input 
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gothic-200 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-gothic-300 mb-1">
                   Email Address
                 </label>
                 <Input 
@@ -89,7 +89,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gothic-200 mb-1">
+                <label htmlFor="subject" className="block text-sm font-medium text-gothic-300 mb-1">
                   Subject
                 </label>
                 <Input 
@@ -101,7 +101,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gothic-200 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-gothic-300 mb-1">
                   Message
                 </label>
                 <Textarea 
