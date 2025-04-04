@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, ShieldCheck } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -34,8 +33,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start">
-                <ShieldCheck className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
-                <div>
+                <div className="ml-8">
                   <p className="font-medium text-gothic-300">Returns & Refunds</p>
                   <p className="text-gray-400">No returns are accepted without a return authorization number. See the <Link to="/shipping-returns" className="text-halloween-500 hover:underline">Shipping & Returns</Link> page for complete details.</p>
                 </div>
