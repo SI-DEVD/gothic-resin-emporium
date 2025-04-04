@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -68,8 +69,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
-          <div className="flex-shrink-0 flex items-center">
+        <div className="flex justify-center h-20">
+          <div className="flex-shrink-0 flex items-center -ml-[15%]">
             <Link to="/" className="flex items-center gap-3">
               <img
                 className="h-14 w-auto transition-transform hover:scale-105 invert"
@@ -80,7 +81,7 @@ const Navbar = () => {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-5 ml-[7.5rem]">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-5 ml-20">
             {categories.map((category) => (
               category.href.startsWith('/#') ? (
                 <a 
