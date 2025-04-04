@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -27,7 +26,7 @@ const Contact = () => {
               </div>
               
               {/* Existing address section */}
-              <div className="flex items-start">
+              <div className="flex items-start mb-8">
                 <MapPin className="w-5 h-5 text-halloween-500 mt-1 mr-3" />
                 <div>
                   <p className="font-medium text-gothic-300">Address</p>
