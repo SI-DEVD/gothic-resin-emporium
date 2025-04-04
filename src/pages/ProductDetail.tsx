@@ -1,6 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Star, StarHalf, ShoppingCart, Heart, Facebook, Twitter, Share2, Pin } from 'lucide-react';
+import { Star, StarHalf, ShoppingCart, Heart, Facebook, Twitter, Share2, Pin, Instagram } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -155,6 +156,15 @@ const ProductDetail = () => {
       case 'pinterest':
         shareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(currentUrl)}&media=${encodeURIComponent(product?.image || '')}&description=${encodeURIComponent(productName)}`;
         break;
+      case 'instagram':
+        // Instagram doesn't have a direct share URL like others
+        // Most commonly people would copy the link and paste in Instagram manually
+        toast({
+          title: "Share on Instagram",
+          description: "Copy this link and paste it in your Instagram post",
+        });
+        navigator.clipboard.writeText(currentUrl);
+        return;
       case 'tiktok':
         // TikTok doesn't have a direct share URL like others, but we can redirect to TikTok
         // Most commonly people would copy the link and paste in TikTok manually
@@ -345,6 +355,14 @@ const ProductDetail = () => {
                   className="bg-dark-300/80 border-gothic-400 text-red-500 hover:text-red-400"
                 >
                   <Pin className="h-5 w-5" />
+                </Button>
+                <Button 
+                  onClick={() => shareOnSocialMedia('instagram')} 
+                  variant="outline" 
+                  size="icon" 
+                  className="bg-dark-300/80 border-gothic-400 text-pink-500 hover:text-pink-400"
+                >
+                  <Instagram className="h-5 w-5" />
                 </Button>
                 <Button 
                   onClick={() => shareOnSocialMedia('tiktok')} 
