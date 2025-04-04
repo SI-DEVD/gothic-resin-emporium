@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -52,7 +53,7 @@ const Navbar = () => {
                 src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
                 alt="Skulls Inspired"
               />
-              <span className="text-xl font-gothic font-bold hidden sm:block whitespace-nowrap">Skulls Inspired</span>
+              <span className="text-xl font-gothic font-bold hidden sm:block whitespace-nowrap text-gothic-400">Skulls Inspired</span>
             </Link>
           </div>
           
