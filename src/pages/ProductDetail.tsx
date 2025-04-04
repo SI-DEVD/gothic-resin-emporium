@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Star, StarHalf, ShoppingCart, Heart } from 'lucide-react';
@@ -16,6 +15,7 @@ import {
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
+import RelatedProducts from '@/components/RelatedProducts';
 
 interface Product {
   id: number;
@@ -30,6 +30,7 @@ interface Product {
 const ProductDetail = () => {
   const { id, category } = useParams();
   const [product, setProduct] = useState<Product | null>(null);
+  const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
   const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(true);
   const { toast } = useToast();
@@ -66,6 +67,31 @@ const ProductDetail = () => {
             foundProduct.rating = parseFloat((3.5 + Math.random() * 1.5).toFixed(1));
           }
           setProduct(foundProduct);
+          
+          // Get related products (same category but not the current product)
+          // Find which category the product belongs to
+          let productCategory = '';
+          for (const cat in data) {
+            if (data[cat].some((p: Product) => p.id === parseInt(id as string))) {
+              productCategory = cat;
+              break;
+            }
+          }
+          
+          // Get products from the same category, but not the current one
+          if (productCategory) {
+            const related = data[productCategory]
+              .filter((p: Product) => p.id !== parseInt(id as string))
+              .slice(0, 4); // Limit to 4 related products
+            
+            // Add ratings to related products if not present
+            const relatedWithRatings = related.map((p: Product) => ({
+              ...p,
+              rating: p.rating || parseFloat((3.5 + Math.random() * 1.5).toFixed(1))
+            }));
+            
+            setRelatedProducts(relatedWithRatings);
+          }
         } else {
           navigate('/not-found');
         }
@@ -298,6 +324,18 @@ const ProductDetail = () => {
               </div>
             ))}
           </div>
+        </div>
+        
+        {/* Related Products */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-gothic font-bold mb-4 text-gothic-100">Related Products</h2>
+          <Separator className="mb-6 bg-gothic-800" />
+          
+          {relatedProducts.length > 0 ? (
+            <RelatedProducts products={relatedProducts} category={category || ''} />
+          ) : (
+            <p className="text-gothic-400">No related products found.</p>
+          )}
         </div>
       </div>
       

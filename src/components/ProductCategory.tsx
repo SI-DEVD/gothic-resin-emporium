@@ -28,6 +28,8 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, 
     return title.toLowerCase().replace(/\s+/g, '-');
   };
 
+  const categorySlug = getCategorySlug();
+
   return (
     <section id={id} className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -48,7 +50,7 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, 
                 {product.isBestSeller && (
                   <Badge className="product-badge bg-gothic-600">Best Seller</Badge>
                 )}
-                <Link to={`/product/${getCategorySlug()}/${product.id}`}>
+                <Link to={`/product/${categorySlug}/${product.id}`}>
                   <img 
                     src={product.image} 
                     alt={product.name} 
@@ -65,7 +67,7 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ id, title, subtitle, 
                 </Link>
               </div>
               <div className="p-6">
-                <Link to={`/product/${getCategorySlug()}/${product.id}`}>
+                <Link to={`/product/${categorySlug}/${product.id}`}>
                   <h3 className="text-xl font-gothic font-bold mb-2 text-gothic-200 hover:text-halloween-500 transition-colors">{product.name}</h3>
                 </Link>
                 <p className="text-halloween-500 font-bold">${product.price.toFixed(2)}</p>
