@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -103,6 +102,9 @@ const Navbar = () => {
                 )
               ))}
               <Link to="/shop" className="btn-primary whitespace-nowrap">Shop All</Link>
+              <Link to="/cart" className="text-gothic-400 hover:text-gothic-300 transition-colors">
+                <ShoppingCart className="h-6 w-6" />
+              </Link>
             </div>
           </div>
           
