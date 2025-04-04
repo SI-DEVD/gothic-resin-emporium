@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -37,6 +38,21 @@ const Navbar = () => {
     { name: 'Contact', href: '/#contact' },
   ];
   
+  // Function to display multi-word category names on separate lines
+  const formatCategoryName = (name: string) => {
+    const words = name.split(' ');
+    if (words.length > 1) {
+      return (
+        <span className="flex flex-col items-center text-center">
+          {words.map((word, index) => (
+            <span key={index}>{word}</span>
+          ))}
+        </span>
+      );
+    }
+    return name;
+  };
+  
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -62,17 +78,17 @@ const Navbar = () => {
                 <a 
                   key={category.name} 
                   href={category.href} 
-                  className="nav-link whitespace-nowrap"
+                  className="nav-link"
                 >
-                  {category.name}
+                  {formatCategoryName(category.name)}
                 </a>
               ) : (
                 <Link 
                   key={category.name} 
                   to={category.href} 
-                  className="nav-link whitespace-nowrap"
+                  className="nav-link"
                 >
-                  {category.name}
+                  {formatCategoryName(category.name)}
                 </Link>
               )
             ))}
@@ -105,7 +121,7 @@ const Navbar = () => {
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-white hover:bg-gothic-800"
                 onClick={toggleMenu}
               >
-                {category.name}
+                {formatCategoryName(category.name)}
               </a>
             ) : (
               <Link
@@ -114,7 +130,7 @@ const Navbar = () => {
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-white hover:bg-gothic-800"
                 onClick={toggleMenu}
               >
-                {category.name}
+                {formatCategoryName(category.name)}
               </Link>
             )
           ))}
