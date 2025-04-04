@@ -1,7 +1,7 @@
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Pinterest } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -49,18 +49,18 @@ const Footer = () => {
                 <span className="sr-only">Facebook</span>
               </a>
               <a 
-                href="#instagram" 
-                className="text-gray-400 hover:text-halloween-500 transition-colors"
-              >
-                <Instagram className="w-6 h-6" />
-                <span className="sr-only">Instagram</span>
-              </a>
-              <a 
                 href="#twitter" 
                 className="text-gray-400 hover:text-halloween-500 transition-colors"
               >
                 <Twitter className="w-6 h-6" />
                 <span className="sr-only">Twitter</span>
+              </a>
+              <a 
+                href="#instagram" 
+                className="text-gray-400 hover:text-halloween-500 transition-colors"
+              >
+                <Instagram className="w-6 h-6" />
+                <span className="sr-only">Instagram</span>
               </a>
             </div>
           </div>
