@@ -22,10 +22,40 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    
+    // Add smooth scrolling for anchor links
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+        e.preventDefault();
+        const targetId = target.getAttribute('href')?.substring(1);
+        const targetElement = document.getElementById(targetId || '');
+        
+        if (targetElement) {
+          const headerOffset = 80; // Adjust this value based on your header height
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (isOpen) {
+            setIsOpen(false);
+          }
+        }
+      }
+    };
+    
+    document.addEventListener('click', handleAnchorClick);
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleAnchorClick);
     };
-  }, []);
+  }, [isOpen]);
 
   const categories = [
     { name: 'Cabinet Knobs', href: '/cabinet-knobs' },

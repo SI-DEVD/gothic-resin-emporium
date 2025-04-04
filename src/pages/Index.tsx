@@ -77,8 +77,6 @@ const Index = () => {
     document.querySelectorAll('.web-corner').forEach(corner => {
       corner.innerHTML = webSVG;
     });
-
-    // Removed welcome toast
   }, [toast]);
 
   if (loading) {
@@ -99,7 +97,7 @@ const Index = () => {
       
       {productsData && (
         <>
-          <div id="shop" className="py-16 bg-gothic-gradient relative">
+          <div id="shop" className="pt-32 pb-16 bg-gothic-gradient relative"> {/* Increased top padding to account for fixed navbar */}
             <div className="absolute inset-0 bg-dark-500/80"></div>
             <div className="container mx-auto px-4 relative z-10">
               <h2 className="section-title">Our Haunting Collection</h2>

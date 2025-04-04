@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Skull, CreditCard, ShieldCheck } from 'lucide-react';
@@ -17,8 +18,32 @@ const Hero = () => {
 
     window.addEventListener('mousemove', handleMouseMove);
     
+    // Handle smooth scrolling with offset for fixed header
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+        e.preventDefault();
+        const targetId = target.getAttribute('href')?.substring(1);
+        const targetElement = document.getElementById(targetId || '');
+        
+        if (targetElement) {
+          const headerOffset = 80; // Adjust this value based on your header height
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    };
+    
+    document.addEventListener('click', handleAnchorClick);
+    
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('click', handleAnchorClick);
     };
   }, []);
 
