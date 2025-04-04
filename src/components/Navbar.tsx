@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '../hooks/use-mobile';
 
@@ -108,6 +109,11 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             {/* Mobile Company Name */}
             <span className="text-[1.32rem] font-gothic font-bold text-gothic-400 ml-5 mr-6 whitespace-nowrap">Skulls Inspired</span>
+            
+            {/* Shopping Cart Icon */}
+            <Link to="/cart" className="mr-3">
+              <ShoppingCart className="h-6 w-6 text-gothic-400 hover:text-gothic-300 transition-colors" />
+            </Link>
             
             <button
               onClick={toggleMenu}
