@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
@@ -31,9 +30,9 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
                 alt="Skulls Inspired" 
-                className="h-12 w-auto"
+                className="h-12 w-auto invert"
               />
-              <span className="text-xl font-gothic font-bold">Skulls Inspired</span>
+              <span className="text-xl font-gothic font-bold text-gothic-400">Skulls Inspired</span>
             </div>
             <p className="text-gray-400 mb-6">
               Handcrafted skull-themed resin jewelry and accessories for those who appreciate darkly elegant design.
