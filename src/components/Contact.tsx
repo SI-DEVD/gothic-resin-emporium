@@ -1,12 +1,35 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
+  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+
+  const handleCaptchaChange = (value: string | null) => {
+    setCaptchaValue(value);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!captchaValue) {
+      alert("Please complete the CAPTCHA");
+      return;
+    }
+    
+    // Form submission logic would go here
+    console.log("Form submitted with CAPTCHA verification");
+    
+    // Reset CAPTCHA after submission
+    setCaptchaValue(null);
+    
+    // You would typically submit form data to your server here
+  };
+
   return (
     <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -48,7 +71,7 @@ const Contact = () => {
           <div className="bg-dark-400 p-8 rounded-lg border border-gothic-800 spooky-shadow">
             <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-300">Send us a Message</h3>
             
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gothic-300 mb-1">
                   Your Name
@@ -58,6 +81,7 @@ const Contact = () => {
                   type="text" 
                   placeholder="Enter your name" 
                   className="bg-dark-300 border-gothic-700 text-white"
+                  required
                 />
               </div>
               
@@ -70,6 +94,7 @@ const Contact = () => {
                   type="email" 
                   placeholder="Enter your email" 
                   className="bg-dark-300 border-gothic-700 text-white"
+                  required
                 />
               </div>
               
@@ -81,10 +106,28 @@ const Contact = () => {
                   id="message" 
                   placeholder="Enter your message" 
                   className="bg-dark-300 border-gothic-700 text-white min-h-[120px]"
+                  required
                 />
               </div>
               
-              <Button className="btn-primary w-full">
+              <div className="my-4">
+                <div className="flex justify-center bg-dark-300 p-4 rounded-md">
+                  <ReCAPTCHA
+                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    onChange={handleCaptchaChange}
+                    theme="dark"
+                  />
+                </div>
+                <p className="text-xs text-gray-400 mt-2 text-center">
+                  This CAPTCHA helps us prevent spam submissions
+                </p>
+              </div>
+              
+              <Button 
+                type="submit" 
+                className="btn-primary w-full"
+                disabled={!captchaValue}
+              >
                 Send Message
               </Button>
             </form>
