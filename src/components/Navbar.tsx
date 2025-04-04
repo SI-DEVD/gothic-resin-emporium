@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -81,7 +80,7 @@ const Navbar = () => {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-5">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-5 ml-[7.5rem]">
             {categories.map((category) => (
               category.href.startsWith('/#') ? (
                 <a 
