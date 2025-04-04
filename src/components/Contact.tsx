@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -36,7 +35,7 @@ const Contact = () => {
               <div className="flex items-start">
                 <div className="ml-8">
                   <p className="font-medium text-gothic-300">Returns & Refunds</p>
-                  <p className="text-gray-400">No returns are accepted without a return authorization number. See the <Link to="/faq" className="text-halloween-500 hover:underline">FAQ</Link> page for complete details.</p>
+                  <p className="text-gray-400">No returns are accepted without a return authorization number. See the <Link to="/shipping-returns" className="text-halloween-500 hover:underline">Shipping & Returns</Link> page for complete details.</p>
                 </div>
               </div>
             </div>
@@ -93,4 +92,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
