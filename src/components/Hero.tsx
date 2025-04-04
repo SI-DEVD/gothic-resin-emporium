@@ -40,7 +40,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-gothic font-bold mb-6 text-white leading-tight">
-            Handmade Skull <span className="text-gothic-400">Jewelry</span> & Accessories
+            Handmade <span className="text-gothic-400">Skull</span> Jewelry <span className="text-white">& Accessories</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8">
             Discover our hauntingly beautiful collection of handmade resin skull designs that add a touch of gothic elegance to your style.
