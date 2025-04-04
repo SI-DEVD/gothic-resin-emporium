@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -38,9 +40,16 @@ const Navbar = () => {
     { name: 'Contact', href: '/#contact' },
   ];
   
-  // Function to display multi-word category names on separate lines
+  // Function to display category names appropriately based on device type
   const formatCategoryName = (name: string) => {
     const words = name.split(' ');
+    
+    // On mobile, display all names on a single line
+    if (isMobile) {
+      return name;
+    }
+    
+    // On desktop, multi-word categories display on separate lines
     if (words.length > 1) {
       return (
         <span className="flex flex-col items-center text-center">
@@ -118,7 +127,7 @@ const Navbar = () => {
               <a
                 key={category.name}
                 href={category.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-white hover:bg-gothic-800"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-white hover:bg-gothic-800 text-left whitespace-nowrap"
                 onClick={toggleMenu}
               >
                 {formatCategoryName(category.name)}
@@ -127,7 +136,7 @@ const Navbar = () => {
               <Link
                 key={category.name}
                 to={category.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-white hover:bg-gothic-800"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-white hover:bg-gothic-800 text-left whitespace-nowrap"
                 onClick={toggleMenu}
               >
                 {formatCategoryName(category.name)}
@@ -136,7 +145,7 @@ const Navbar = () => {
           ))}
           <Link 
             to="/shop" 
-            className="block w-full text-center btn-primary mt-4"
+            className="block w-full text-left btn-primary mt-4"
             onClick={toggleMenu}
           >
             Shop All
