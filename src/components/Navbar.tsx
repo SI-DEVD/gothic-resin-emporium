@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -37,7 +36,7 @@ const Navbar = () => {
     { name: 'About', href: '/#about' },
     { name: 'Contact', href: '/#contact' },
   ];
-
+  
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -49,7 +48,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-4 mr-12">
               <img
-                className="h-12 w-auto transition-transform hover:scale-105 invert"
+                className="h-14 w-auto transition-transform hover:scale-105 invert"
                 src="/lovable-uploads/07445cdb-b976-45c7-9d7d-9ae1447b9b18.png"
                 alt="Skulls Inspired"
               />
