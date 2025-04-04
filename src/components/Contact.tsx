@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -67,71 +68,72 @@ const Contact = () => {
             </div>
           </div>
         
-        <div className="bg-dark-400 p-8 rounded-lg border border-gothic-800 spooky-shadow">
-          <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-300">Send us a Message</h3>
-          
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gothic-300 mb-1">
-                Your Name
-              </label>
-              <Input 
-                id="name" 
-                type="text" 
-                placeholder="Enter your name" 
-                className="bg-dark-300 border-gothic-700 text-white"
-                required
-              />
-            </div>
+          <div className="bg-dark-400 p-8 rounded-lg border border-gothic-800 spooky-shadow">
+            <h3 className="text-2xl font-gothic font-bold mb-6 text-gothic-300">Send us a Message</h3>
             
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gothic-300 mb-1">
-                Email Address
-              </label>
-              <Input 
-                id="email" 
-                type="email" 
-                placeholder="Enter your email" 
-                className="bg-dark-300 border-gothic-700 text-white"
-                required
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gothic-300 mb-1">
-                Message
-              </label>
-              <Textarea 
-                id="message" 
-                placeholder="Enter your message" 
-                className="bg-dark-300 border-gothic-700 text-white min-h-[120px]"
-                required
-              />
-            </div>
-            
-            <div className="my-4">
-              <div className="flex justify-center">
-                <ReCAPTCHA
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                  size="compact"
-                  className="transform scale-90"
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gothic-300 mb-1">
+                  Your Name
+                </label>
+                <Input 
+                  id="name" 
+                  type="text" 
+                  placeholder="Enter your name" 
+                  className="bg-dark-300 border-gothic-700 text-white"
+                  required
                 />
               </div>
-              <p className="text-xs text-gray-400 mt-2 text-center">
-                Verify you're human
-              </p>
-            </div>
-            
-            <Button 
-              type="submit" 
-              className="btn-primary w-full"
-              disabled={!captchaValue}
-            >
-              Send Message
-            </Button>
-          </form>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gothic-300 mb-1">
+                  Email Address
+                </label>
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="bg-dark-300 border-gothic-700 text-white"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gothic-300 mb-1">
+                  Message
+                </label>
+                <Textarea 
+                  id="message" 
+                  placeholder="Enter your message" 
+                  className="bg-dark-300 border-gothic-700 text-white min-h-[120px]"
+                  required
+                />
+              </div>
+              
+              <div className="my-4">
+                <div className="flex justify-center">
+                  <ReCAPTCHA
+                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    onChange={handleCaptchaChange}
+                    theme="dark"
+                    size="compact"
+                    className="transform scale-90"
+                  />
+                </div>
+                <p className="text-xs text-gray-400 mt-2 text-center">
+                  Verify you're human
+                </p>
+              </div>
+              
+              <Button 
+                type="submit" 
+                className="btn-primary w-full"
+                disabled={!captchaValue}
+              >
+                Send Message
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
