@@ -33,8 +33,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="text-gray-300 text-sm">
-                <p>Returns & Refunds: No returns are accepted without a return authorization number. See the <Link to="/faq" className="text-halloween-500 hover:underline">FAQ</Link> page for complete details.</p>
+              <div>
+                <p className="text-gray-400">Returns & Refunds: No returns are accepted without a return authorization number. See the <Link to="/faq" className="text-halloween-500 hover:underline">FAQ</Link> page for complete details.</p>
               </div>
             </div>
           </div>
