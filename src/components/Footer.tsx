@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Youtube, icons } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, CircleDot, Video } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -23,9 +22,9 @@ const Footer = () => {
     { name: 'Terms of Service', href: '/terms-of-service' },
   ];
 
-  // Create icon components for those not directly exported
-  const PinterestIcon = icons.CirclePin;
-  const TikTokIcon = icons.CircleVideo;
+  // Using available icons instead of the unavailable ones
+  const PinterestIcon = CircleDot;
+  const TikTokIcon = Video;
 
   return (
     <footer className="bg-dark-500 text-gray-300 py-16 relative">
