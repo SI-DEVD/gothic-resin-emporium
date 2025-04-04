@@ -1,7 +1,6 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Skull } from 'lucide-react';
+import { Skull, CreditCard, ShieldCheck } from 'lucide-react';
 
 const Hero = () => {
   const skullRef = useRef<HTMLDivElement>(null);
@@ -56,11 +55,12 @@ const Hero = () => {
           
           <div className="mt-12 p-4 bg-dark-300/50 border border-gothic-800 rounded-lg">
             <div className="flex items-center gap-2 mb-3">
-              <span className="h-2 w-2 rounded-full bg-halloween-500 animate-pulse"></span>
-              <p className="text-sm font-medium text-halloween-500">Limited Edition</p>
+              <ShieldCheck className="w-5 h-5 text-halloween-500" />
+              <p className="text-sm font-medium text-halloween-500">Shipping Magic!</p>
             </div>
-            <p className="text-gray-300">
-              Our Halloween special collection is now available for a limited time. Each piece is uniquely crafted with premium materials.
+            <p className="text-gray-300 flex items-center gap-2">
+              <CreditCard className="w-5 h-5 text-gothic-300" />
+              FREE Shipping Site Wide! All major credit cards accepted via secure PayPal checkout.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const Hero = () => {
               <div className="p-8 grid grid-cols-1 gap-8">
                 <div className="card">
                   <img 
-                    src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGljfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080" 
+                    src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNDk0OTN8MHwxfHNlYXJjaHw5fHxkYXJrJTIwZ290aGl jfGVufDB8fHx8MTcxNjQ5OTU1N3ww&ixlib=rb-4.0.3&q=80&w=1080" 
                     alt="Skull Jewelry Showcase" 
                     className="w-full h-60 object-cover object-center"
                   />
