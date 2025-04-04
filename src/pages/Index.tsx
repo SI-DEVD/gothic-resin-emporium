@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -79,14 +78,7 @@ const Index = () => {
       corner.innerHTML = webSVG;
     });
 
-    // Welcome toast
-    setTimeout(() => {
-      toast({
-        title: "Welcome to Skulls Inspired",
-        description: "Explore our handcrafted skull-themed jewelry and accessories.",
-        className: "bg-dark-400 border-gothic-600",
-      });
-    }, 2000);
+    // Removed welcome toast
   }, [toast]);
 
   if (loading) {
