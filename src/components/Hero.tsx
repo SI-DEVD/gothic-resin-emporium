@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Skull, CreditCard, ShieldCheck } from 'lucide-react';
+import { Skull, ShieldCheck } from 'lucide-react';
 
 const Hero = () => {
   const skullRef = useRef<HTMLDivElement>(null);
@@ -83,10 +83,13 @@ const Hero = () => {
               <ShieldCheck className="w-5 h-5 text-halloween-500" />
               <p className="text-sm font-medium text-halloween-500">Shipping & Payment Alert:</p>
             </div>
-            <div className="text-gray-300 flex items-center gap-2">
-              <CreditCard className="w-5 h-5 text-gothic-300" />
-              <div>
+            <div className="text-gray-300 space-y-2 ml-2">
+              <div className="flex items-center gap-2">
+                <Skull className="w-4 h-4 text-gothic-300 flex-shrink-0" />
                 <p>FREE shipping site wide!</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Skull className="w-4 h-4 text-gothic-300 flex-shrink-0" />
                 <p>All major credit cards accepted via secure PayPal checkout!</p>
               </div>
             </div>
